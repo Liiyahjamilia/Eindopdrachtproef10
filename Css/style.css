@@ -1,0 +1,464 @@
+/*Ik heb de margin en de padding op de website op 0 gedaan om
+de automatische witruimte weg te halen. Nu sluiten mijn containers
+en footer volledig aan op mijn website*/
+
+/*Ik heb een background cover geplaatst zodat de foto niet uit het 
+blok loopt hiermee past hij zich aan het blok aan.*/
+
+/*Ik heb een grit gebruikt omdat ik alle content onder elkaar wil hebben
+met nog een eztra flex wrap zodat alle content mee beweegt en niet buiten
+de wrapper gaan en wil dat mijn site ook responsive is op je mobiele telefoon*/
+
+body {
+    display: grid;
+    flex-wrap: wrap;
+    border: 0px solid black;
+    background-color: white;
+    background-image: url(../images/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0px;
+    margin: 0px;
+
+}
+
+p {
+    font-size: 18px;
+    font-family: Helvetica, sans-serif;
+    color: darkviolet;
+    font-weight: bold;
+    background-color: yellow;
+    text-align: center;
+    align-items: center;
+    padding: 50px;
+    border-radius: 1em;
+    margin: 50px;
+    padding-top: 10px;
+
+}
+
+a {
+    font-size: 18px;
+    font-family: Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+
+}
+
+/* Deze wordt alleen gebruikt voor banner "titels" */
+
+
+h1 {
+    font-size: 80px;
+    font-family: PixeloidSans-Bold;
+    color: yellow;
+
+    text-align: center;
+}
+
+h5 {
+    font-size: 80px;
+    font-family: PixeloidSans-Bold;
+    color: yellow;
+
+    text-align: center;
+}
+
+@font-face {
+    font-family: PixeloidSans-Bold;
+    src: url('/font/PixeloidSans-Bold.ttf');
+}
+
+/* Deze wordt alleen gebruikt voor banner "slogans" */
+
+h2 {
+    font-size: 25px;
+    font-family: Helvetica, sans-serif;
+    color: yellow;
+    text-align: center;
+}
+
+/* Deze wordt alleen gebruikt voor "quotes" */
+
+h3 {
+    font-size: 20px;
+    font-family: wanding, sans-serif;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    color: white;
+    text-align: center;
+}
+
+/* Allle kopteksten in de body */
+
+h4 {
+    font-size: 50px;
+    font-family: PixeloidSans-Bold;
+    color: purple;
+    text-align: center;
+    justify-content: center;
+    margin: 20px;
+    padding-top: 100px;
+}
+
+.bronnen a,
+.bronnen li,
+.bronnen p {
+    display: inline-block;
+    text-align: center;
+    font-size: 20px;
+    color: purple;
+    text-decoration: none;
+    border: 0px solid black;
+
+
+}
+
+header {
+    display: grid;
+    align-items: center;
+    padding: 20px;
+    border: 0px solid black;
+
+}
+
+/* Bij de header heb ik geleerd hoe je een block moest gebruiken, na honderden
+codes te hebben ingevuld is dit de code die mijn tekst niet buiten het blok
+van mijn kollom bracht. Hier bedacht ik me dat ik nog geen style had gemaakt
+vor de link in mijn kollom, vandaar de .bronnen a{ */
+
+header nav.logo {
+
+    display: flex;
+    margin: 0;
+    border: 0px;
+    align-items: center;
+}
+
+header>a {
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+
+}
+
+/*De space-around geeft mijn navigatie menu een gelijke spatie*/
+
+ul.menu {
+    display: flex;
+    border: 0px solid black;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    margin: 0px;
+
+
+}
+
+ul.menu li {
+    list-style: none;
+    display: inline-block;
+    border: 0px solid black;
+    padding: 0px;
+    background-color: none;
+    border-radius: 8em;
+    width: 110px;
+    height: 25px;
+    text-align: center;
+
+
+}
+
+
+ul.menu li a {
+
+    font-size: 25px;
+    font-family: PixeloidSans-Bold;
+    color: yellow;
+    text-decoration: none;
+
+
+}
+
+.menu a:hover {
+    color: fuchsia;
+    transition: 0.9s;
+}
+
+.container li {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color: purple;
+    margin: 7px;
+}
+
+
+.container {
+    display: grid;
+    border: 10px solid black;
+    width: 100%;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    background-color: fuchsia;
+    border-radius: 8em;
+    opacity: 0, 0;
+}
+
+.container2 {
+    display: grid;
+    border: 0px solid black;
+    width: 100%;
+    padding: 20px;
+    border-radius: 8em;
+    background-color: black;
+}
+
+.container3 {
+    display: grid;
+    padding: 10px;
+    margin-right: 400px;
+    margin-left: 400px;
+    border: 0px solid black;
+}
+
+.container4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ik heb hier 'grid' inplaats van 'Flex' gebruikt omdat 
+ik alles onder elkaar wilde hebben en niet naast elkaar*/
+
+ul li {
+    display: grid;
+    border: 0px solid black;
+    font-size: 18px;
+    padding: 10px;
+    font-family: Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+
+}
+
+.logo {
+    display: flex;
+    border: 0px solid black;
+    padding-left: 500px;
+    padding-right: 500px;
+    width: 600px;
+    height: 600px;
+    animation: roll 200s infinite;
+    transform: rotate(360deg);
+}
+
+@keyframes roll {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+.bronnen {
+    max-width: 600px;
+    border: 0px solid black;
+    margin: auto;
+    background-color: fuchsia;
+    border-radius: 2em;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    padding-left: 200px;
+    padding-right: 200px;
+
+
+}
+
+/* Ik heb hier een class gemaakt omdat ik mijn content wilde laten meebewegen met de pagina */
+
+.content {
+    display: grid;
+    border: 0px solid black;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    width: 500px;
+}
+
+.section {
+    display: flex;
+}
+
+video {
+
+    width: 250px;
+    border-radius: 2em;
+
+}
+
+.section video {
+
+    display: flex;
+    align-items: center;
+    border-radius: 2em;
+
+}
+
+/* Omdat mijn andere video ook full size werd heb 
+ik de header video een class gegeven zodat alleen deze full-size wordt */
+.header-video {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+    border-radius: 8em;
+}
+
+/* Deze code heb ik opgezocht omdat ik graag mijn tekst in mijn video header wilde hebben.
+ook heb ik de code van de video header opgezocht omdat ik de video in de header wilde hebben staan
+en in een bepaald formaat. Ik heb hierbij geleerd dat om een video (of een ander item) 
+in de header full size, afsnijdend in een block wil hebben "display: block" moet gebruiken.*/
+
+.video-wrap {
+    position: relative;
+    width: 100%;
+    height: 500px;
+}
+
+.img-wrap {
+    position: relative;
+    width: 100%;
+    height: 500px;
+}
+
+.header-img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 8em;
+}
+
+/* Ik had eerst alleen deze code maar mijn video's stonden nog steeds helemaal rechts gecentreerd, 
+ik snapte niet waarom. Toen bedacht ik me dat die video's in een container staan, dus waarschijnlijk
+moet ik deze een "class" geven om het groter te maken zodat deze de grootte van de site krijgt en 
+aanfezien de elementen in een flex-box staan passen deze zich aan aan de container van de flex-box */
+
+.video-text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    overflow: hidden;
+    animation: verschijn 6s ease;
+}
+
+@keyframes verschijn {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.8;
+    }
+}
+
+.info-container {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+    max-width: 1200px;
+    background: blueviolet;
+    opacity: 98%;
+    margin-left: 200px;
+    border-radius: 8em;
+    border: 10px solid black;
+}
+
+.info-container li p {
+    flex: 1;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    width: 200px;
+    margin-bottom: 100px;
+    margin-right: 100px;
+    padding-right: 500px;
+
+}
+
+.video-container {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+    margin-left: 0px;
+    border-radius: 8em;
+    border: 10px solid black;
+    border-radius: 2em;
+}
+
+
+.quote-container {
+    display: flex;
+    gap: 15px;
+    max-width: 1200px;
+    width: 100%;
+    margin-left: 200px;
+    border-radius: 8em;
+    border: 10px solid black;
+}
+
+.quote-container li p {
+    flex: 1;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    width: 200px;
+    margin-bottom: 100px;
+    margin-right: 100px;
+
+}
+
+ul li h3 {
+    flex: 1;
+    font-family: PixeloidSans-Bold;
+    font-size: 20px;
+    width: 100%;
+    margin-bottom: 100px;
+    margin-right: 100px;
+    padding-right: 500px;
+
+}
+
+ul li img {
+    width: 80%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    border-radius: 8em;
+    overflow: hidden;
+}
+
+footer {
+    padding: 50px;
+    background-color: purple;
+    margin-top: 50px;
+}
+
+footer p {
+    color: purple;
+    font-family: PixeloidSans-Bold;
+    text-align: center;
+    padding-top: 40px;
+}
